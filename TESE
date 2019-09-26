@@ -1,0 +1,21 @@
+@Test  
+    public void testCreateToken(){  
+        String userId = "Pikachu";  
+        String issuer = "amazon.ac.uk";  
+        String subject = "UOL";  
+        long ttlMillis = 999*99;  
+        String audience = "thunder";  
+        String token = TokenUtil.createJWT(userId,issuer,subject,ttlMillis,audience);  
+        //print token information
+        System.out.println(token);  
+  
+  
+//        decrypt token information
+        Claims claims = TokenUtil.getClaims(token);  
+        
+        System.out.println("ID: " + claims.getId());  
+        System.out.println("Subject: " + claims.getSubject());  
+        System.out.println("Issuer: " + claims.getIssuer());  
+        System.out.println("Expiration: " + claims.getExpiration());  
+  
+    }  

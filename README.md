@@ -7,7 +7,8 @@ It contains the type and the algorithm utilized to sign signature and etc.
 {
 "TYP":"JWT",
 "ALG":"SHA256"
-}```
+}
+```
 
 ##Payload
 It contains the detailed information of token such as the issuer of JWT, the expiration of the token and etc.
@@ -15,6 +16,7 @@ It contains the detailed information of token such as the issuer of JWT, the exp
 "ISS":"JUNYEMAO",
 "EXP":"Today"
 }
+```
 
 ##Signature
 It is encrypted by the secret key stored in the JWT generator with the information in the Header and Payload.

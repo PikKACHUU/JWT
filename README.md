@@ -12,7 +12,8 @@ It contains the type and the algorithm utilized to sign signature and etc.
 
 ## Payload
 It contains the detailed information of token such as the issuer of JWT, the expiration of the token and etc.
-```{
+```
+{
 "ISS":"JUNYEMAO",
 "EXP":"Today"
 }
